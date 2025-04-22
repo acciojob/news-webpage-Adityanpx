@@ -1,46 +1,62 @@
 /*  your css code here. If applicable */
 body {
 	background-color: #f5f5f5;
+	margin: 0;
+	font-family: Arial, sans-serif;
 }
+
 .header {
-	background-color:#011e29;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	padding:4px;
-	color:white;
+	background-color: #011e29;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	color: white;
 }
 
 .articles {
-	margin-top:0.5rem;
-	display:flex;
-	flex-direction:row;
-	gap:1rem;
-	padding:2px;
-	justify-content:center;
-	justify-items:center;
-	align-items: flex-start; /* important to avoid equal height */
-
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 1rem;
+	flex-wrap: wrap;
+	align-items:flex-start;
 }
-.a1,
-.a2,
-.a3{
-	height:default;
-	width:30%;
-	max-width:400px;
-	background-color:white;
-	border-radius:0.5rem;
-	justify-content:center;
-	justify-items:center;
+
+.latest-news-section,
+.main-article,
+.pictorial-news-section {
+	width: 30%;
+	max-width: 400px;
+	background-color: white;
+	border-radius: 0.5rem;
+	padding: 1rem;
 	box-sizing: border-box;
-
 }
-p {
-	text-align:center;
-		margin: 0.5rem 0;
 
+.latest-news-section {
 }
-.a3 img {
-	width:150px;
-	padding:10px;
+
+.latest-news-section ul {
+	padding-left: 1.2rem;
+}
+
+.latest-news-section li {
+	margin-bottom: 0.5rem;
+}
+
+.main-article p {
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+.pictorial-news-section {
+	text-align: center;
+}
+
+.pictorial-news-section img {
+	width: 150px;
+	padding: 10px;
+	border-radius: 0.3rem;
 }
