@@ -1,1 +1,46 @@
 /*  your css code here. If applicable */
+body {
+	background-color: #f5f5f5;
+}
+.header {
+	background-color:#011e29;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:4px;
+	color:white;
+}
+
+.articles {
+	margin-top:0.5rem;
+	display:flex;
+	flex-direction:row;
+	gap:1rem;
+	padding:2px;
+	justify-content:center;
+	justify-items:center;
+	align-items: flex-start; /* important to avoid equal height */
+
+}
+.a1,
+.a2,
+.a3{
+	height:default;
+	width:30%;
+	max-width:400px;
+	background-color:white;
+	border-radius:0.5rem;
+	justify-content:center;
+	justify-items:center;
+	box-sizing: border-box;
+
+}
+p {
+	text-align:center;
+		margin: 0.5rem 0;
+
+}
+.a3 img {
+	width:150px;
+	padding:10px;
+}
